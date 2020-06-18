@@ -1,24 +1,24 @@
-# README
+# <Ciel>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+<ビデオ通話ができるマッチングアプリ>
 
-Things you may want to cover:
+### サイトテーマ
+<Don't need to meet>
 
-* Ruby version
+### テーマを選んだ理由
+<昨今、コロナウイルスの影響で過度な外出を控える若者が増えていると考える。
+外出をしなくても出会うことができ、ビデオ通話を通して交流できるように。>
 
-* System dependencies
+### ターゲットユーザ
+<10代後半〜30代後半>
 
-* Configuration
+### 主な利用シーン
+<家にいながら異性と交流したい時>
 
-* Database creation
+## 設計書
 
-* Database initialization
+### 機能一覧
+<https://docs.google.com/spreadsheets/d/e/2PACX-1vThs8dO6HfK5ASSRBGrQKtTTyybuaoOR9OvE2z3Rmzui1Gpb3mLsRTdf6_beKb9kV4ElcQgmq31wsyo/pubhtml>
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
