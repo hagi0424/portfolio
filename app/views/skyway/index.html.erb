@@ -51,5 +51,15 @@
       mediaConnection.answer(localStream);
       setEventListener(mediaConnection);
     });
+
+    //エラーメッセージ
+    peer.on('error', err => {
+        alert(err.message);
+    });
+    
+　　　//通話切断メッセージ
+    peer.on('close', () => {
+      alert('通信が切断しました。');
+    });
   </script>
 </div>
