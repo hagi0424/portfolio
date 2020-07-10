@@ -22,19 +22,6 @@
 	}
 }
 
-.type-1 {
-  span {
-    transition: all 0.3s;
-    transform: rotate(0deg);
-  }
-  .top {
-    transform: translateY(-17px);
-  }
-  .bottom {
-    transform: translateY(17px);
-  }
-}
-
 .aboutPage {
     display: flex;
     flex-direction: column;
