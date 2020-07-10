@@ -1,11 +1,11 @@
 <div class="loginPage">
-	<h2 class="title">Twenty-six</h2>
+	<h2><%= link_to 'Twenty-six', about_index_path, :style=>"color: #ffffff;", class: "mainTitle" %></h2>
   <div class="container">
     <div class="loginPage_contents">
       <h1 class="loginPage_contents_title">
-      Go Beyond the Borders<br>
+      <strong>Go Beyond the Borders<br>
       of<br>
-      Messages
+      Messages</strong>
       </h1>
       <%= link_to "メールアドレスでログインする", new_user_session_path, class: "btn loginPage_contents_btn" %>
     </div>
