@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :matching, only: [:index]
   resources :chat, only: [:show,:create]
   resources :skyway, only: [:index]
+  resources :about, only: [:index]
 end
