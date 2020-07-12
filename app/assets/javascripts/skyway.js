@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SkyWay - P2P Media example</title>
-    <link rel="stylesheet" href="../_shared/style.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="heading">P2P Media example</h1>
-      <p class="note">
-        Enter remote peer ID to call.
-      </p>
-      <div class="p2p-media">
-        <div class="remote-stream">
-          <video id="js-remote-stream"></video>
-        </div>
-        <div class="local-stream">
-          <video id="js-local-stream"></video>
-          <p>Your ID: <span id="js-local-id"></span></p>
-          <input type="text" placeholder="Remote Peer ID" id="js-remote-id">
-          <button id="js-call-trigger">Call</button>
-          <button id="js-close-trigger">Close</button>
-        </div>
-      </div>
-      <p class="meta" id="js-meta"></p>
-    </div>
-    <script type="text/javascript">
-      const Peer = window.Peer;
+const Peer = window.Peer;
 
 (async function main() {
   const localVideo = document.getElementById('js-local-stream');
@@ -58,7 +29,7 @@
   await localVideo.play().catch(console.error);
 
   const peer = (window.peer = new Peer({
-    key: window.__SKYWAY_KEY__ = '24e1b3db-6357-4ee2-b62c-8bc1d9de06db',
+    key: window.__SKYWAY_KEY__,
     debug: 3,
   }));
 
@@ -110,9 +81,3 @@
 
   peer.on('error', console.error);
 })();
-    </script>
-    <script src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
-    <script src="../_shared/key.js"></script>
-    <script src="./script.js"></script>
-  </body>
-</html>
