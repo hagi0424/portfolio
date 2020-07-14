@@ -43,7 +43,11 @@
 
 @media (max-width: 576px) {
   .loginPage_contents_title {
-    font-size: 42px !important;
+    font-size: 45px !important;
   }
-  
+  .mainTitle {
+    font-size: 24px !important;
+    padding:30px 13px 5px 13px !important;
+    margin-bottom: 20px !important;
+  }
 }
